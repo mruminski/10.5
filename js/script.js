@@ -21,7 +21,10 @@
   accordionVanillaJS();
 
   var accordionJQuery = function() {
-    
+    $("#accordion-jquery h3").click(function() {
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
+    });
   };
 
   accordionJQuery();
