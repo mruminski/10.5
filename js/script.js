@@ -21,7 +21,7 @@
   accordionVanillaJS();
 
   var accordionJQuery = function() {
-    $("#accordion-jquery h3").on(function() {
+    $("#accordion-jquery h3").on('click', function() {
       $(this).addClass("active");
       $(this).siblings().removeClass("active");
     });
